@@ -35,6 +35,6 @@ def move(board, ind, arg = 'X')
   board[ind] = arg
 end
 
-def turn
+def turn(board)
   
 end
