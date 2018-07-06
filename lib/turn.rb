@@ -45,9 +45,7 @@ def turn(board)
     ind = input_to_index(ind.to_i)
   end
   
-  if(valid_move(ind))
+  
     move(board, ind, arg)
-  else
-    puts ""
-  end
+  
 end
