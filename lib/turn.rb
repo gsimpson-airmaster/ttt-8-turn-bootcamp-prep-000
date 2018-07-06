@@ -27,3 +27,12 @@ def valid_move?(board, index)
   end
 end
 
+def input_to_index(i)
+  return (i.to_i - 1)
+end
+
+def move(board, ind, arg = 'X')
+  board[ind] = arg
+end
+
+def turn
