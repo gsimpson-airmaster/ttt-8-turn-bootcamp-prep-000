@@ -46,6 +46,6 @@ def turn(board)
   end
   
   
-    move(board, ind, arg)
+    move(board, ind)
   
 end
