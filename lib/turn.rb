@@ -36,5 +36,18 @@ def move(board, ind, arg = 'X')
 end
 
 def turn(board)
+  puts "Please enter 1-9:"
+  ind = gets.strip
+  ind = input_to_index(ind.to_i)
+  until(valid_move(ind))
+    puts "That's not a valid move!! Please enter 1-9:"
+    ind = gets.strip
+    ind = input_to_index(ind.to_i)
+  end
   
+  if(valid_move(ind))
+    move(board, ind, arg)
+  else
+    puts ""
+  end
 end
