@@ -39,7 +39,7 @@ def turn(board)
   puts "Please enter 1-9:"
   ind = gets.strip
   ind = input_to_index(ind.to_i)
-  until(valid_move?(ind))
+  until(valid_move?(board, ind))
     puts "That's not a valid move!! Please enter 1-9:"
     ind = gets.strip
     ind = input_to_index(ind.to_i)
